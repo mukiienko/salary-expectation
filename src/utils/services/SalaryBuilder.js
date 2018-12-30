@@ -53,11 +53,6 @@ export default class SalaryBuilder {
     output: [item.salary / 100000]
   });
 
-  static normalizeData = item => ({
-    input: [item.experience / 100],
-    output: [item.salary / 100000]
-  });
-
   static applyFiletrs = (value, filters) => {
     let changedValue = value;
 
