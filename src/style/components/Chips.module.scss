@@ -1,0 +1,14 @@
+@import '../core/base';
+
+.chips {
+  padding-top: 1.3rem;
+  font-size: 1.3rem;
+  &__label {
+    color: $color-bold-grey;
+  }
+  & &__item {
+    margin-left: 1.1rem;
+    margin-top: 0.1rem;
+    color: $color-bold-grey;
+  }
+}

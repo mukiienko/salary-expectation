@@ -1,0 +1,44 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`render Select render correctly select component 1`] = `
+<div
+  className="MuiFormControl-root-1"
+>
+  <label
+    className="MuiFormLabel-root-16 MuiInputLabel-root-5 MuiInputLabel-formControl-10 MuiInputLabel-animated-13"
+    data-shrink={false}
+  />
+  <div
+    className="MuiInputBase-root-43 MuiInput-root-30 MuiInput-underline-34 MuiInputBase-formControl-44 MuiInput-formControl-31"
+    onClick={[Function]}
+  >
+    <div
+      className="MuiNativeSelect-root-23"
+    >
+      <select
+        aria-invalid={false}
+        className="MuiNativeSelect-select-24 MuiInputBase-input-53 MuiInput-input-38"
+        disabled={false}
+        onBlur={[Function]}
+        onChange={[Function]}
+        onFocus={[Function]}
+        required={false}
+      />
+      <svg
+        aria-hidden="true"
+        className="MuiSvgIcon-root-60 MuiNativeSelect-icon-29"
+        focusable="false"
+        role="presentation"
+        viewBox="0 0 24 24"
+      >
+        <path
+          d="M7 10l5 5 5-5z"
+        />
+      </svg>
+    </div>
+  </div>
+  <p
+    className="MuiFormHelperText-root-69"
+  />
+</div>
+`;

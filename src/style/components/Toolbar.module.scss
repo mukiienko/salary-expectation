@@ -1,0 +1,25 @@
+@import '../core/base';
+
+.toolbar {
+  background-color: $color-dark-grey;
+  padding: 1rem 5rem 1rem 5rem;
+  position: relative;
+  z-index: 1;
+  @include mobile-lg {
+    padding-right: 1.5rem;
+    padding-left: 1.5rem;
+  }
+  &__wrap {
+    @include flex(center, space-between, row);
+    // margin: auto;
+    // max-width: $screen-md;
+  }
+  &__logo {
+    max-width: 2.5rem;
+    transform: scale(2.5);
+    margin-left: .7rem;
+  }
+  & &__logout {
+    color: #fff;
+  }
+}

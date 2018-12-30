@@ -1,0 +1,9 @@
+/* mixin css-grid */
+@mixin grid($gridGap: 20px, $gridTemplateColumns: repeat(auto-fit, minmax(18rem, 1fr))) {
+  display: -ms-grid;
+  display: grid;
+  grid-template-columns: $gridTemplateColumns;   // minmax(auto-fill, 30rem) 1fr 1fr && 2fr 3fr repeat(2, 1fr 2fr minmax(10rem, auto))
+  grid-gap: $gridGap;                            // grid-column-gap && grid-row-gap
+  // grid-auto-flow: $gridAutoFlow;                 // row, column
+  // grid-template-rows: $gridTemplateRows;         // 10rem 10rem 10rem
+}

@@ -1,0 +1,35 @@
+@import '../core/base';
+
+.login {
+  @include flex(center, center, column);
+  background-color: $color-dark-grey;
+  color: #fff;
+  font-size: calc(10px + 2vmin);
+  text-align: center;
+  padding: 0 1.5rem;
+  height: 100%;
+  &__wrap {
+    transform: translateY(-4rem);
+    padding: 1.5rem 0;
+  }
+  &__main {
+    padding-bottom: 5rem;
+  }
+  &__logo {
+    max-width: calc(28rem + 2vmin);
+    transform: translateX(-1.5rem);
+  }
+  &__title {
+    color: $color-blue;
+    padding-bottom: 1rem;
+    margin-top: -1.5rem;
+  }
+  &__subtitle {
+    max-width: 400px;
+    font-size: 14px;
+  }
+  & &__button {
+    min-width: 16rem;
+    text-transform: inherit;
+  }
+}

@@ -1,0 +1,63 @@
+@import '../core/base';
+
+.profile {
+  width: 100%;
+  @include desktop-xsm {
+    width: 30rem;
+    min-width: 30rem;
+  }
+  @include tablet-md {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+  &__card {
+    @include flex(center, flex-start);
+    @include tablet-md {
+      flex-direction: column;
+    }
+  }
+  &__image {
+    border-radius: 50%;
+    border: .3rem solid #fff;
+    box-shadow: 0 0 .2rem rgba(0,0,0, 0.2);
+    height: 6rem;
+    width: 6rem;
+    @include tablet-md {
+      height: 10rem;
+      width: 10rem;
+    }
+  }
+  &__headers {
+    padding-left: 1.5rem;
+    @include tablet-md {
+      padding-left: 0;
+      text-align: center;
+      padding-top: 1rem;
+      width: 100%;
+    }
+    h4 {
+      font-size: 1.6rem;
+      padding-bottom: .2rem;
+      text-transform: inherit;
+    }
+    h5 {
+      font-size: 1.2rem;
+      padding: 0;
+      color: #777;
+      text-transform: inherit;
+    }
+  }
+  &__list {
+    padding: 1.5rem 1.5rem 0;
+    margin-top: 1.5rem;
+    border-top: .1rem solid #ededed;
+  }
+  &__item {
+    @include flex(flex-start, space-between);
+    padding: .5rem 0;
+    color: #606060;
+    b {
+      padding-right: 1rem;
+    }
+  }
+}

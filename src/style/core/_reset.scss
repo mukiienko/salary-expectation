@@ -1,0 +1,97 @@
+html, body, div, span, iframe, a,
+h1, h2, h3, h4, h5, h6, p, pre, code,
+em, img, small, strong, b, u, i, ol, ul, li, fieldset, form,
+label, article, aside, figure, nav, figcaption,
+footer, header, hgroup, menu, section, mark, audio, video {
+  border: 0;
+  margin: 0;
+  padding: 0;
+  vertical-align: baseline;
+}
+html {
+  font-size: 62.5%;
+  -webkit-font-smoothing: subpixel-antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: none;
+}
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+:global [id*="root"] {
+  & > div {
+    height: 100%;  
+  }
+  height: 100%;
+}
+
+html, body, input, textarea {
+  font-family: 'Roboto', sans-serif;
+}
+body {
+  overflow-x: hidden;
+}
+input, textarea {
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+input, textarea, button, a {
+  outline: 0;
+}
+input:-webkit-autofill {
+  -webkit-box-shadow: inset 0 0 0 50px #fff !important;
+  border: 0 !important;
+  outline: 0 !important;
+}
+ol, ul {
+  list-style: none;
+}
+p, li {
+  font-size: 1.3rem;
+  line-height: 1.9rem;
+}
+a {
+  text-decoration: none;
+}
+iframe, img, canvas {
+  max-width: 100%;
+}
+*, *:before, *:after {
+  box-sizing: border-box;
+  outline: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: $color-black;
+  text-transform: uppercase;
+  line-height: 1.35em;
+  font-weight: 700;
+  padding-bottom: 1.5rem;
+}
+
+h1 {
+  font-size: 2.4rem;
+  @include mobile-lg {
+    font-size: calc(1rem + 2vmin);
+  }
+}
+
+h2 {
+  font-size: 2rem;
+  @include mobile-lg {
+    font-size: 1.6rem;
+  }
+}
+
+h3 {
+  font-size: 1.6rem;
+  @include mobile-lg {
+    font-size: 1.5;
+  }
+}
+
+h4 {
+  font-size: 1.4rem;
+}
