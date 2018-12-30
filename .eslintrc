@@ -10,6 +10,7 @@
     ],
     "react/prop-types": 0,
     "no-underscore-dangle": 0,
+    "import/prefer-default-export": "off",
     "import/imports-first": ["error", "absolute-first"],
     "no-shadow": [2, {"allow": ["done"]}],
     "react/require-default-props": [<off>, { forbidDefaultForRequired: <boolean> }],
