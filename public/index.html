@@ -26,6 +26,10 @@
         authorize: true
         lang:      'en_US'
     </script>
+    <script type="text/javascript">
+      if(/MSIE \d|Trident.*rv:/.test(navigator.userAgent))
+          document.write('<script src="https://cdn.polyfill.io/v2/polyfill.min.js"><\/script>');
+    </script>
   </head>
   <body>
     <noscript>
