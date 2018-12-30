@@ -43,6 +43,7 @@
     "react-redux": "^6.0.0",
     "react-router-dom": "^4.3.1",
     "react-scripts": "2.1.1",
+    "react-test-renderer": "next",
     "redux": "^4.0.1",
     "redux-react-hook": "^3.0.0",
     "redux-thunk": "^2.3.0",
@@ -64,5 +65,8 @@
   },
   "eslintConfig": {
     "extends": "react-app"
-  }
+  },
+  "eslintIgnore": [
+    "*.test.js"
+  ]
 }
